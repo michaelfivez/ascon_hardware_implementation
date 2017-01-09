@@ -1,0 +1,116 @@
+# ===================================================
+# sdi.txt
+# This file was generated using AETVgen.py script
+# with the following parameters:
+#
+# algorithm       caesar
+# blockSize       16
+# blockSizeAD     16
+# caesarLib       /cygdrive/c/Users/michael/Documents/School/ThesisNewYear/GMU_AEAD_HW_API_v1_2/software/lib/ascon128av11.so
+# cipherTextMode  0
+# ctrSizeAd       8
+# ctrSizeD        8
+# decrypt         False
+# dontCare        False
+# enableLoadLen   False
+# enableNsec      False
+# enableRoundKey  False
+# libVer          None
+# maxSize         32
+# maxSizeAD       32
+# maxSizeRNG      512
+# maxSizeSegment  10000
+# minSize         0
+# minSizeAD       0
+# minSizeRNG      1
+# opcode          False
+# padAD           0
+# padD            0
+# padStyle        1
+# plainTextMode   0
+# reverseDblk     False
+# sizeElement     8
+# sizeKey         16
+# sizeNpub        16
+# sizeNsec        16
+# sizePIO         4
+# sizeRoundKey    16
+# sizeSIO         4
+# sizeTag         16
+# startTV         0
+# testMode        1
+# totalRoundKey   11
+# verbose         False
+#
+# ===================================================
+# 001 : Instruction (Opcode=Load key)
+INS = 01040200
+# 001 : SgtHdr      (Size=  16) (PAD=0) (EOI=1) (EOT=1) (SgtType=Key)
+HDR = 01630010
+DAT = 55555555555555555555555555555555
+# 003 : Instruction (Opcode=Load key)
+INS = 03040300
+# 003 : SgtHdr      (Size=  16) (PAD=0) (EOI=1) (EOT=1) (SgtType=Key)
+HDR = 03630010
+DAT = 55555555555555555555555555555555
+# 006 : Instruction (Opcode=Load key)
+INS = 06040400
+# 006 : SgtHdr      (Size=  16) (PAD=0) (EOI=1) (EOT=1) (SgtType=Key)
+HDR = 04630010
+DAT = 55555555555555555555555555555555
+# 007 : Instruction (Opcode=Load key)
+INS = 07040500
+# 007 : SgtHdr      (Size=  16) (PAD=0) (EOI=1) (EOT=1) (SgtType=Key)
+HDR = 05630010
+DAT = 55555555555555555555555555555555
+# 008 : Instruction (Opcode=Load key)
+INS = 08040600
+# 008 : SgtHdr      (Size=  16) (PAD=0) (EOI=1) (EOT=1) (SgtType=Key)
+HDR = 06630010
+DAT = 55555555555555555555555555555555
+# 009 : Instruction (Opcode=Load key)
+INS = 09040700
+# 009 : SgtHdr      (Size=  16) (PAD=0) (EOI=1) (EOT=1) (SgtType=Key)
+HDR = 07630010
+DAT = 55555555555555555555555555555555
+# 011 : Instruction (Opcode=Load key)
+INS = 0B040800
+# 011 : SgtHdr      (Size=  16) (PAD=0) (EOI=1) (EOT=1) (SgtType=Key)
+HDR = 08630010
+DAT = 55555555555555555555555555555555
+# 012 : Instruction (Opcode=Load key)
+INS = 0C040900
+# 012 : SgtHdr      (Size=  16) (PAD=0) (EOI=1) (EOT=1) (SgtType=Key)
+HDR = 09630010
+DAT = 55555555555555555555555555555555
+# 013 : Instruction (Opcode=Load key)
+INS = 0D040A00
+# 013 : SgtHdr      (Size=  16) (PAD=0) (EOI=1) (EOT=1) (SgtType=Key)
+HDR = 0A630010
+DAT = 55555555555555555555555555555555
+# 015 : Instruction (Opcode=Load key)
+INS = 0F040B00
+# 015 : SgtHdr      (Size=  16) (PAD=0) (EOI=1) (EOT=1) (SgtType=Key)
+HDR = 0B630010
+DAT = 55555555555555555555555555555555
+# 016 : Instruction (Opcode=Load key)
+INS = 10040C00
+# 016 : SgtHdr      (Size=  16) (PAD=0) (EOI=1) (EOT=1) (SgtType=Key)
+HDR = 0C630010
+DAT = 55555555555555555555555555555555
+# 017 : Instruction (Opcode=Load key)
+INS = 11040D00
+# 017 : SgtHdr      (Size=  16) (PAD=0) (EOI=1) (EOT=1) (SgtType=Key)
+HDR = 0D630010
+DAT = 55555555555555555555555555555555
+# 018 : Instruction (Opcode=Load key)
+INS = 12040E00
+# 018 : SgtHdr      (Size=  16) (PAD=0) (EOI=1) (EOT=1) (SgtType=Key)
+HDR = 0E630010
+DAT = 55555555555555555555555555555555
+# 019 : Instruction (Opcode=Load key)
+INS = 13040F00
+# 019 : SgtHdr      (Size=  16) (PAD=0) (EOI=1) (EOT=1) (SgtType=Key)
+HDR = 0F630010
+DAT = 55555555555555555555555555555555
+###EOF
