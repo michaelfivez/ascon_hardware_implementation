@@ -1,0 +1,51 @@
+# ===================================================
+# sdi.txt
+# This file was generated using AETVgen.py script
+# with the following parameters:
+#
+# algorithm       caesar
+# blockSize       8
+# blockSizeAD     8
+# caesarLib       /cygdrive/c/Users/michael/Documents/School/ThesisNewYear/GMU_AEAD_HW_API_v1_2/software/lib/ascon128v11.so
+# cipherTextMode  0
+# ctrSizeAd       8
+# ctrSizeD        8
+# decrypt         False
+# dontCare        False
+# enableLoadLen   False
+# enableNsec      False
+# enableRoundKey  False
+# libVer          None
+# maxSize         32
+# maxSizeAD       32
+# maxSizeRNG      512
+# maxSizeSegment  10000
+# minSize         0
+# minSizeAD       0
+# minSizeRNG      1
+# opcode          False
+# padAD           0
+# padD            0
+# padStyle        1
+# plainTextMode   0
+# reverseDblk     False
+# sizeElement     8
+# sizeKey         16
+# sizeNpub        16
+# sizeNsec        16
+# sizePIO         4
+# sizeRoundKey    16
+# sizeSIO         4
+# sizeTag         16
+# startTV         0
+# testMode        1
+# totalRoundKey   11
+# verbose         False
+#
+# ===================================================
+# 001 : Instruction (Opcode=Load key)
+INS = 01040100
+# 001 : SgtHdr      (Size=  16) (PAD=0) (EOI=1) (EOT=1) (SgtType=Key)
+HDR = 01630010
+DAT = 55555555555555555555555555555555
+###EOF
