@@ -1,0 +1,314 @@
+# ===================================================
+# do.txt
+# This file was generated using AETVgen.py script
+# with the following parameters:
+#
+# algorithm       caesar
+# blockSize       8
+# blockSizeAD     8
+# caesarLib       /cygdrive/c/Users/michael/Documents/School/ThesisNewYear/GMU_AEAD_HW_API_v1_2/software/lib/ascon128v11.so
+# cipherTextMode  0
+# ctrSizeAd       8
+# ctrSizeD        8
+# decrypt         False
+# dontCare        False
+# enableLoadLen   False
+# enableNsec      False
+# enableRoundKey  False
+# libVer          None
+# maxSize         32
+# maxSizeAD       32
+# maxSizeRNG      512
+# maxSizeSegment  10000
+# minSize         0
+# minSizeAD       0
+# minSizeRNG      1
+# opcode          False
+# padAD           0
+# padD            0
+# padStyle        1
+# plainTextMode   0
+# reverseDblk     False
+# sizeElement     8
+# sizeKey         16
+# sizeNpub        16
+# sizeNsec        16
+# sizePIO         4
+# sizeRoundKey    16
+# sizeSIO         4
+# sizeTag         16
+# startTV         0
+# testMode        1
+# totalRoundKey   11
+# verbose         False
+#
+# ===================================================
+
+#### MsgID=001, KeyID=001, AD Size=   1, Plaintext Size=   0, Opcode=AEAD encrypt, Algorithm=caesar
+# 001 : Instruction (Opcode=Activate key)
+INS = 01070100
+# 001 : Instruction (Opcode=AEAD decrypt)
+INS = 01030100
+# 001 : SgtHdr      (Size=  16) (PAD=0) (EOI=0) (EOT=1) (SgtType=Npub)
+HDR = 01110010
+DAT = B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0
+# 001 : SgtHdr      (Size=   1) (PAD=0) (EOI=1) (EOT=1) (SgtType=Associated Data)
+HDR = 01230001
+DAT = A0000000
+# 001 : SgtHdr      (Size=  16) (PAD=0) (EOI=1) (EOT=1) (SgtType=Tag)
+HDR = 01530010
+DAT = 427A25C9E1355E25BD545D92B74FBF28
+
+#### MsgID=002, KeyID=001, AD Size=   1, Ciphertext Size=   0, Opcode=AEAD decrypt, Algorithm=caesar
+# 002 : Instruction (Opcode=Authentication passed)
+INS = 020E0100
+# 002 : SgtHdr      (Size=   1) (PAD=0) (EOI=1) (EOT=1) (SgtType=Associated Data)
+HDR = 02230001
+DAT = A0000000
+
+#### MsgID=003, KeyID=001, AD Size=   0, Plaintext Size=   1, Opcode=AEAD encrypt, Algorithm=caesar
+# 003 : Instruction (Opcode=Activate key [Generated])
+INS = 03070100
+# 003 : Instruction (Opcode=AEAD decrypt)
+INS = 03030100
+# 003 : SgtHdr      (Size=  16) (PAD=0) (EOI=0) (EOT=1) (SgtType=Npub)
+HDR = 03110010
+DAT = B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0
+# 003 : SgtHdr      (Size=   1) (PAD=0) (EOI=1) (EOT=1) (SgtType=Ciphertext)
+HDR = 03430001
+DAT = BC000000
+# 003 : SgtHdr      (Size=  16) (PAD=0) (EOI=1) (EOT=1) (SgtType=Tag)
+HDR = 03530010
+DAT = F3C401947366A1D17C9E5A98F8F94D93
+
+#### MsgID=004, KeyID=001, AD Size=   0, Ciphertext Size=   1, Opcode=AEAD decrypt, Algorithm=caesar
+# 004 : Instruction (Opcode=Authentication passed)
+INS = 040E0100
+# 004 : SgtHdr      (Size=   1) (PAD=0) (EOI=1) (EOT=1) (SgtType=Plaintext)
+HDR = 04330001
+DAT = FF000000
+
+#### MsgID=005, KeyID=001, AD Size=   1, Plaintext Size=   1, Opcode=AEAD encrypt, Algorithm=caesar
+# 005 : Instruction (Opcode=Activate key [Generated])
+INS = 05070100
+# 005 : Instruction (Opcode=AEAD decrypt)
+INS = 05030100
+# 005 : SgtHdr      (Size=  16) (PAD=0) (EOI=0) (EOT=1) (SgtType=Npub)
+HDR = 05110010
+DAT = B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0
+# 005 : SgtHdr      (Size=   1) (PAD=0) (EOI=0) (EOT=1) (SgtType=Associated Data)
+HDR = 05210001
+DAT = A0000000
+# 005 : SgtHdr      (Size=   1) (PAD=0) (EOI=1) (EOT=1) (SgtType=Ciphertext)
+HDR = 05430001
+DAT = 69000000
+# 005 : SgtHdr      (Size=  16) (PAD=0) (EOI=1) (EOT=1) (SgtType=Tag)
+HDR = 05530010
+DAT = 195AB801255FEE674F3B8AF58AC4B3F5
+
+#### MsgID=006, KeyID=001, AD Size=   1, Ciphertext Size=   1, Opcode=AEAD decrypt, Algorithm=caesar
+# 006 : Instruction (Opcode=Authentication passed)
+INS = 060E0100
+# 006 : SgtHdr      (Size=   1) (PAD=0) (EOI=0) (EOT=1) (SgtType=Associated Data)
+HDR = 06210001
+DAT = A0000000
+# 006 : SgtHdr      (Size=   1) (PAD=0) (EOI=1) (EOT=1) (SgtType=Plaintext)
+HDR = 06330001
+DAT = FF000000
+
+#### MsgID=007, KeyID=001, AD Size=   8, Plaintext Size=   8, Opcode=AEAD encrypt, Algorithm=caesar
+# 007 : Instruction (Opcode=Activate key [Generated])
+INS = 07070100
+# 007 : Instruction (Opcode=AEAD decrypt)
+INS = 07030100
+# 007 : SgtHdr      (Size=  16) (PAD=0) (EOI=0) (EOT=1) (SgtType=Npub)
+HDR = 07110010
+DAT = B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0
+# 007 : SgtHdr      (Size=   8) (PAD=0) (EOI=0) (EOT=1) (SgtType=Associated Data)
+HDR = 07210008
+DAT = A0A0A0A0A0A0A0A0
+# 007 : SgtHdr      (Size=   8) (PAD=0) (EOI=1) (EOT=1) (SgtType=Ciphertext)
+HDR = 07430008
+DAT = 243A821077C9DAF3
+# 007 : SgtHdr      (Size=  16) (PAD=0) (EOI=1) (EOT=1) (SgtType=Tag)
+HDR = 07530010
+DAT = 4F6F58B53E80B532568B17BC48C0FC53
+
+#### MsgID=008, KeyID=001, AD Size=   8, Ciphertext Size=   8, Opcode=AEAD decrypt, Algorithm=caesar
+# 008 : Instruction (Opcode=Authentication passed)
+INS = 080E0100
+# 008 : SgtHdr      (Size=   8) (PAD=0) (EOI=0) (EOT=1) (SgtType=Associated Data)
+HDR = 08210008
+DAT = A0A0A0A0A0A0A0A0
+# 008 : SgtHdr      (Size=   8) (PAD=0) (EOI=1) (EOT=1) (SgtType=Plaintext)
+HDR = 08330008
+DAT = FFFFFFFFFFFFFFFF
+
+#### MsgID=009, KeyID=001, AD Size=   7, Plaintext Size=   7, Opcode=AEAD encrypt, Algorithm=caesar
+# 009 : Instruction (Opcode=Activate key [Generated])
+INS = 09070100
+# 009 : Instruction (Opcode=AEAD decrypt)
+INS = 09030100
+# 009 : SgtHdr      (Size=  16) (PAD=0) (EOI=0) (EOT=1) (SgtType=Npub)
+HDR = 09110010
+DAT = B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0
+# 009 : SgtHdr      (Size=   7) (PAD=0) (EOI=0) (EOT=1) (SgtType=Associated Data)
+HDR = 09210007
+DAT = A0A0A0A0A0A0A000
+# 009 : SgtHdr      (Size=   7) (PAD=0) (EOI=1) (EOT=1) (SgtType=Ciphertext)
+HDR = 09430007
+DAT = 5308C9C7FDECD400
+# 009 : SgtHdr      (Size=  16) (PAD=0) (EOI=1) (EOT=1) (SgtType=Tag)
+HDR = 09530010
+DAT = E77AC68FB1BFB30EB25666D4E51D5E81
+
+#### MsgID=010, KeyID=001, AD Size=   7, Ciphertext Size=   7, Opcode=AEAD decrypt, Algorithm=caesar
+# 010 : Instruction (Opcode=Authentication passed)
+INS = 0A0E0100
+# 010 : SgtHdr      (Size=   7) (PAD=0) (EOI=0) (EOT=1) (SgtType=Associated Data)
+HDR = 0A210007
+DAT = A0A0A0A0A0A0A000
+# 010 : SgtHdr      (Size=   7) (PAD=0) (EOI=1) (EOT=1) (SgtType=Plaintext)
+HDR = 0A330007
+DAT = FFFFFFFFFFFFFF00
+
+#### MsgID=011, KeyID=001, AD Size=   9, Plaintext Size=   9, Opcode=AEAD encrypt, Algorithm=caesar
+# 011 : Instruction (Opcode=Activate key [Generated])
+INS = 0B070100
+# 011 : Instruction (Opcode=AEAD decrypt)
+INS = 0B030100
+# 011 : SgtHdr      (Size=  16) (PAD=0) (EOI=0) (EOT=1) (SgtType=Npub)
+HDR = 0B110010
+DAT = B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0
+# 011 : SgtHdr      (Size=   9) (PAD=0) (EOI=0) (EOT=1) (SgtType=Associated Data)
+HDR = 0B210009
+DAT = A0A0A0A0A0A0A0A0A0000000
+# 011 : SgtHdr      (Size=   9) (PAD=0) (EOI=1) (EOT=1) (SgtType=Ciphertext)
+HDR = 0B430009
+DAT = 457B273B70DD652D8A000000
+# 011 : SgtHdr      (Size=  16) (PAD=0) (EOI=1) (EOT=1) (SgtType=Tag)
+HDR = 0B530010
+DAT = AC7BE6E836C09C6F5E7858B76690A4C7
+
+#### MsgID=012, KeyID=001, AD Size=   9, Ciphertext Size=   9, Opcode=AEAD decrypt, Algorithm=caesar
+# 012 : Instruction (Opcode=Authentication passed)
+INS = 0C0E0100
+# 012 : SgtHdr      (Size=   9) (PAD=0) (EOI=0) (EOT=1) (SgtType=Associated Data)
+HDR = 0C210009
+DAT = A0A0A0A0A0A0A0A0A0000000
+# 012 : SgtHdr      (Size=   9) (PAD=0) (EOI=1) (EOT=1) (SgtType=Plaintext)
+HDR = 0C330009
+DAT = FFFFFFFFFFFFFFFFFF000000
+
+#### MsgID=013, KeyID=001, AD Size=  16, Plaintext Size=  16, Opcode=AEAD encrypt, Algorithm=caesar
+# 013 : Instruction (Opcode=Activate key [Generated])
+INS = 0D070100
+# 013 : Instruction (Opcode=AEAD decrypt)
+INS = 0D030100
+# 013 : SgtHdr      (Size=  16) (PAD=0) (EOI=0) (EOT=1) (SgtType=Npub)
+HDR = 0D110010
+DAT = B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0
+# 013 : SgtHdr      (Size=  16) (PAD=0) (EOI=0) (EOT=1) (SgtType=Associated Data)
+HDR = 0D210010
+DAT = A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0
+# 013 : SgtHdr      (Size=  16) (PAD=0) (EOI=1) (EOT=1) (SgtType=Ciphertext)
+HDR = 0D430010
+DAT = B992B7A3C4F2817DFE52B766D41193DD
+# 013 : SgtHdr      (Size=  16) (PAD=0) (EOI=1) (EOT=1) (SgtType=Tag)
+HDR = 0D530010
+DAT = DA822EAD7649E9A8F3605E21D234665D
+
+#### MsgID=014, KeyID=001, AD Size=  16, Ciphertext Size=  16, Opcode=AEAD decrypt, Algorithm=caesar
+# 014 : Instruction (Opcode=Authentication passed)
+INS = 0E0E0100
+# 014 : SgtHdr      (Size=  16) (PAD=0) (EOI=0) (EOT=1) (SgtType=Associated Data)
+HDR = 0E210010
+DAT = A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0
+# 014 : SgtHdr      (Size=  16) (PAD=0) (EOI=1) (EOT=1) (SgtType=Plaintext)
+HDR = 0E330010
+DAT = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+#### MsgID=015, KeyID=001, AD Size=  20, Plaintext Size=  20, Opcode=AEAD encrypt, Algorithm=caesar
+# 015 : Instruction (Opcode=Activate key [Generated])
+INS = 0F070100
+# 015 : Instruction (Opcode=AEAD decrypt)
+INS = 0F030100
+# 015 : SgtHdr      (Size=  16) (PAD=0) (EOI=0) (EOT=1) (SgtType=Npub)
+HDR = 0F110010
+DAT = B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0
+# 015 : SgtHdr      (Size=  20) (PAD=0) (EOI=0) (EOT=1) (SgtType=Associated Data)
+HDR = 0F210014
+DAT = A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0
+# 015 : SgtHdr      (Size=  20) (PAD=0) (EOI=1) (EOT=1) (SgtType=Ciphertext)
+HDR = 0F430014
+DAT = 198A2A4ED31F69DB314FBB1B95F740E51DF9FD49
+# 015 : SgtHdr      (Size=  16) (PAD=0) (EOI=1) (EOT=1) (SgtType=Tag)
+HDR = 0F530010
+DAT = A2002F0097C20C0B8E6209E5CA84C046
+
+#### MsgID=016, KeyID=001, AD Size=  20, Ciphertext Size=  20, Opcode=AEAD decrypt, Algorithm=caesar
+# 016 : Instruction (Opcode=Authentication passed)
+INS = 100E0100
+# 016 : SgtHdr      (Size=  20) (PAD=0) (EOI=0) (EOT=1) (SgtType=Associated Data)
+HDR = 10210014
+DAT = A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0
+# 016 : SgtHdr      (Size=  20) (PAD=0) (EOI=1) (EOT=1) (SgtType=Plaintext)
+HDR = 10330014
+DAT = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+#### MsgID=017, KeyID=001, AD Size=  12, Plaintext Size=  22, Opcode=AEAD encrypt, Algorithm=caesar
+# 017 : Instruction (Opcode=Activate key [Generated])
+INS = 11070100
+# 017 : Instruction (Opcode=AEAD decrypt)
+INS = 11030100
+# 017 : SgtHdr      (Size=  16) (PAD=0) (EOI=0) (EOT=1) (SgtType=Npub)
+HDR = 11110010
+DAT = B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0
+# 017 : SgtHdr      (Size=  12) (PAD=0) (EOI=0) (EOT=1) (SgtType=Associated Data)
+HDR = 1121000C
+DAT = A0A0A0A0A0A0A0A0A0A0A0A0
+# 017 : SgtHdr      (Size=  22) (PAD=0) (EOI=1) (EOT=1) (SgtType=Ciphertext)
+HDR = 11430016
+DAT = F7AD2332AC1C5956AA8FDE1EA70BE37FD2D63B3550090000
+# 017 : SgtHdr      (Size=  16) (PAD=0) (EOI=1) (EOT=1) (SgtType=Tag)
+HDR = 11530010
+DAT = 2045463AEBB3592B8C6E0FB22672BD9B
+
+#### MsgID=018, KeyID=001, AD Size=  16, Ciphertext Size=  22, Opcode=AEAD decrypt, Algorithm=caesar
+# 018 : Instruction (Opcode=Authentication passed)
+INS = 120E0100
+# 018 : SgtHdr      (Size=  16) (PAD=0) (EOI=0) (EOT=1) (SgtType=Associated Data)
+HDR = 12210010
+DAT = A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0A0
+# 018 : SgtHdr      (Size=  22) (PAD=0) (EOI=1) (EOT=1) (SgtType=Plaintext)
+HDR = 12330016
+DAT = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000
+
+#### MsgID=019, KeyID=001, AD Size=  15, Plaintext Size=  31, Opcode=AEAD encrypt, Algorithm=caesar
+# 019 : Instruction (Opcode=Activate key [Generated])
+INS = 13070100
+# 019 : Instruction (Opcode=AEAD decrypt)
+INS = 13030100
+# 019 : SgtHdr      (Size=  16) (PAD=0) (EOI=0) (EOT=1) (SgtType=Npub)
+HDR = 13110010
+DAT = B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0B0
+# 019 : SgtHdr      (Size=  15) (PAD=0) (EOI=0) (EOT=1) (SgtType=Associated Data)
+HDR = 1321000F
+DAT = A0A0A0A0A0A0A0A0A0A0A0A0A0A0A000
+# 019 : SgtHdr      (Size=  31) (PAD=0) (EOI=1) (EOT=1) (SgtType=Ciphertext)
+HDR = 1343001F
+DAT = 4FE37FF9F6A16308D5C95CED80396C84A92BC8906180D34822679F64EBB72E00
+# 019 : SgtHdr      (Size=  16) (PAD=0) (EOI=1) (EOT=1) (SgtType=Tag)
+HDR = 13530010
+DAT = 4F298285FCC2B55945404EC1446929A5
+
+#### MsgID=020, KeyID=001, AD Size=  15, Ciphertext Size=  31, Opcode=AEAD decrypt, Algorithm=caesar
+# 020 : Instruction (Opcode=Authentication passed)
+INS = 140E0100
+# 020 : SgtHdr      (Size=  15) (PAD=0) (EOI=0) (EOT=1) (SgtType=Associated Data)
+HDR = 1421000F
+DAT = A0A0A0A0A0A0A0A0A0A0A0A0A0A0A000
+# 020 : SgtHdr      (Size=  31) (PAD=0) (EOI=1) (EOT=1) (SgtType=Plaintext)
+HDR = 1433001F
+DAT = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00
+###EOF
